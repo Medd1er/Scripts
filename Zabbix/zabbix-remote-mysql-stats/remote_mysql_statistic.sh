@@ -1,22 +1,21 @@
 #!/bin/bash
-##### OPTIONS VERIFICATION #####
 if [[ -z "$1" || -z "$2" ]]; then
   exit 1
 fi
-##### PARAMETERS #####
+#
+# Variables
+#
 RESERVED="$1"
 METRIC="$2"
 USER="${3:-user}"
 PASS="${4:-pass}"
 HOST="${5:-host}"
-#
 MYSQLADMIN="/usr/bin/mysqladmin"
 MYSQL="/usr/bin/mysql"
 CACHE_TTL="55"
 CACHE_FILE="/tmp/zabbix.remote-mysql-stats-${HOST}.cache"
 EXEC_TIMEOUT="1"
 NOW_TIME=`date '+%s'`
-##### RUN #####
 if [ "${METRIC}" = "alive" ]; then
   ${MYSQLADMIN} -h${HOST} -u${USER} -p${PASS} ping | grep alive | wc -l | head -n1
   exit 0

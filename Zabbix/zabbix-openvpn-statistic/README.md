@@ -1,7 +1,7 @@
 # zabbix-openvpn-statistic
 A shell script to grab statistic of OpenVPN connections
 # How to Use:
-   `git clone https://github.com/PressXtoWin/zabbix-openvpn-statistic`
+   #`git clone https://github.com/PressXtoWin/zabbix-openvpn-statistic`
    >0. Place script wherever in accessible directory
       for Zabbix user(i.e. in root directory '/scripts')
       on the remote OpenVPN server with working zabbix agent

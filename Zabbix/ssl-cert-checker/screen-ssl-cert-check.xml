@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.2</version>
+    <date>2017-03-03T14:04:19Z</date>
+    <screens>
+        <screen>
+            <name>SSL Certificates Check</name>
+            <hsize>1</hsize>
+            <vsize>1</vsize>
+            <screen_items>
+                <screen_item>
+                    <resourcetype>10</resourcetype>
+                    <width>500</width>
+                    <height>100</height>
+                    <x>0</x>
+                    <y>0</y>
+                    <colspan>1</colspan>
+                    <rowspan>1</rowspan>
+                    <elements>0</elements>
+                    <valign>0</valign>
+                    <halign>0</halign>
+                    <style>0</style>
+                    <url/>
+                    <dynamic>0</dynamic>
+                    <sort_triggers>0</sort_triggers>
+                    <resource>
+                        <name>Sites</name>
+                    </resource>
+                    <max_columns>3</max_columns>
+                    <application/>
+                </screen_item>
+            </screen_items>
+        </screen>
+    </screens>
+</zabbix_export>

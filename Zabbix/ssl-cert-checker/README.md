@@ -18,7 +18,7 @@ A shell script to grab statistic of SSL Certificates
    3. Uncomment and set UnsafeUserParameters=1 to allow special symbols in passwords
    4. Add UserParameter in zabbix_agent.conf (you can place it as well after "UnsafeUserParameters")
    
-      > UserParameter=mysql-stats[*],/etc/zabbix/scripts/ssl_cert_check.sh $1 $2 $3
+      > UserParameter=ssl-check[*],/etc/zabbix/scripts/ssl_cert_check.sh $1 $2 $3
       
    5. Restart the Zabbix agent (according to your installation)
   

@@ -15,16 +15,15 @@ A shell script to grab statistic of SSL Certificates
       
       > chmod 550 -R /etc/zqbbix/scripts
    
-   3. Uncomment and set UnsafeUserParameters=1 to allow special symbols in passwords
-   4. Add UserParameter in zabbix_agent.conf (you can place it as well after "UnsafeUserParameters")
+   3. Add UserParameter in zabbix_agent.conf (you can place it as well after "UnsafeUserParameters")
    
       > UserParameter=ssl-check[*],/etc/zabbix/scripts/ssl_cert_check.sh $1 $2 $3
       
-   5. Restart the Zabbix agent (according to your installation)
+   4. Restart the Zabbix agent (according to your installation)
   
       > systemctl restart zabbix-agent
-   6. Import **template-ssl_cert_check.xml**
-   7. Import **screen-ssl_cert_check.xml**
-   8. Fill the inherited macros field {$WEBHOST} in attached template to the host 
+   5. Import **template-ssl-cert-check.xml**
+   6. Import **screen-ssl-cert-check.xml**
+   7. Fill the inherited macros field {$WEBHOST} in attached template to the host 
    and change {$PORT} if necessary (by default scripts uses 443 port)
-   9. Enjoy!
+   8. Enjoy!

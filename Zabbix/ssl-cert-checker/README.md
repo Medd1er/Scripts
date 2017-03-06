@@ -1,5 +1,5 @@
-# zabbix-mysql-statistic
-A shell script to grab statistic of Remote MySQL server statistic
+# zabbix-ssl-cert-statistic
+A shell script to grab statistic of SSL Certificates
 # How to Use:
 
    0. Place script wherever in accessible directory
@@ -11,19 +11,20 @@ A shell script to grab statistic of Remote MySQL server statistic
    2. Grant access for Zabbix user to script directory
       and script itself
       
-      > chown root:zabbix /etc/zabbix/scripts/remote_mysql_statistic.sh
+      > chown root:zabbix /etc/zabbix/scripts/ssl_cert_check.sh
       
       > chmod 550 -R /etc/zqbbix/scripts
    
    3. Uncomment and set UnsafeUserParameters=1 to allow special symbols in passwords
    4. Add UserParameter in zabbix_agent.conf (you can place it as well after "UnsafeUserParameters")
    
-      > UserParameter=mysql-stats[*],/etc/zabbix/scripts/remote_mysql_statistic.sh "none" "$1" "$2" "$3" "$4"
+      > UserParameter=mysql-stats[*],/etc/zabbix/scripts/ssl_cert_check.sh $1 $2 $3
       
    5. Restart the Zabbix agent (according to your installation)
   
       > systemctl restart zabbix-agent
-   6. Import **template-remote-mysql.xml**
-   7. Import **screen-remote-mysql.xml**
-   8. Fill the inherited macros fields {$MYSQL_HOST}, {$MYSQL_USER} and {$MYSQL_PASS} in attached template to the host
+   6. Import **template-ssl_cert_check.xml**
+   7. Import **screen-ssl_cert_check.xml**
+   8. Fill the inherited macros field {$WEBHOST} in attached template to the host 
+   and change {$PORT} if necessary (by default scripts uses 443 port)
    9. Enjoy!

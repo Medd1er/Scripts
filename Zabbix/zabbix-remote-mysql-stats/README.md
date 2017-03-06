@@ -13,7 +13,7 @@ A shell script to grab statistic of Remote MySQL server statistic
       
       > chown root:zabbix /etc/zabbix/scripts/remote_mysql_statistic.sh
       
-      > chmod 550 -R /etc/zqbbix/scripts
+      > chmod 550 -R /etc/zabbix/scripts
    
    3. Uncomment and set UnsafeUserParameters=1 to allow special symbols in passwords
    4. Add UserParameter in zabbix_agent.conf (you can place it as well after "UnsafeUserParameters")

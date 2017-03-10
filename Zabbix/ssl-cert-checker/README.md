@@ -11,7 +11,7 @@ A shell script to grab statistic of SSL Certificates
    2. Grant access for Zabbix user to script directory
       and script itself
       
-      > chown root:zabbix /etc/zabbix/scripts/ssl_cert_check.sh
+      > chown root:zabbix -R /etc/zabbix/scripts
       
       > chmod 550 -R /etc/zqbbix/scripts
    
@@ -22,6 +22,7 @@ A shell script to grab statistic of SSL Certificates
    4. Restart the Zabbix agent (according to your installation)
   
       > systemctl restart zabbix-agent
+      
    5. Import **template-ssl-cert-check.xml**
    6. Import **screen-ssl-cert-check.xml**
    7. Fill the inherited macros field {$WEBHOST} in attached template to the host 

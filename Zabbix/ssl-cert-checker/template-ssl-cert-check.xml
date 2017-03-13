@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.2</version>
-    <date>2017-03-03T14:03:49Z</date>
+    <date>2017-03-13T08:28:02Z</date>
     <groups>
         <group>
             <name>Sites</name>
@@ -135,6 +135,10 @@
                 </httptest>
             </httptests>
             <macros>
+                <macro>
+                    <macro>{$CHECKTEXT}</macro>
+                    <value/>
+                </macro>
                 <macro>
                     <macro>{$DAYSLEFT}</macro>
                     <value>-d</value>

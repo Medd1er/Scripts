@@ -11,6 +11,8 @@
     * [OpenVPN Statistic](https://github.com/PressXtoWin/openvpn-statistic)
     * [Remote MySQL Statistic](https://github.com/PressXtoWin/remote-mysql-stats)
     * [SSL Certificate checker](https://github.com/PressXtoWin/ssl-cert-checker)
+  * _Vagrant_
+    * [Jenkins provision with json script for packing a box](https://github.com/PressXtoWin/vagrant-jenkins-box)
  - **PHP**
     * _none_
  - **Python**

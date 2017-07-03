@@ -16,4 +16,5 @@
  - **PHP**
     * _none_
  - **Python**
-    * [GCP Stackdriver Agent Install](https://github.com/PressXtoWin/gcp-stackdriver-agent-install)
+    * _Google Cloud Platform_
+      * [GCP Stackdriver Agent Install](https://github.com/PressXtoWin/gcp-stackdriver-agent-install)

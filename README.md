@@ -18,3 +18,6 @@
  - **Python**
     * _Google Cloud Platform_
       * [GCP Stackdriver Agent Install](https://github.com/PressXtoWin/gcp-stackdriver-agent-install)
+    * _Zabbix_
+      * [NameCheap. Expiration domain script](https://github.com/PressXtoWin/domainExpiration)
+      * [NameCheap. Creating a new domain in Zabbix](https://github.com/PressXtoWin/zabbixHostDomain)
